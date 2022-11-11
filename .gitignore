@@ -1,3 +1,7 @@
+# Folder where I usually back project files to
+.backup/
+backup/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
