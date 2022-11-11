@@ -10,7 +10,7 @@ def ffmpegstitcher():
     ffprobecheck = ffmpegfolder + "\\ffprobe.exe"
     processedfolder = currentdir + "\\.processed"
 
-    if os.path.exists(ffmpegfolder) is False and os.path.exists(processedfolder) is False:
+    if os.path.exists(ffmpegfolder) is False or os.path.exists(processedfolder) is False:
         print("Creating necessary folders...")
     if os.path.exists(ffmpegfolder) is False:
             os.mkdir(ffmpegfolder)
