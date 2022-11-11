@@ -8,8 +8,10 @@ Use the `python freeze.py` command.
 
 ### Sources:
 
-[FFmpeg website](https://github.com/BtbN/FFmpeg-Builds)
+[pytube](https://github.com/pytube/pytube)
 
-[yt-dlp](https://github.com/yt-dlp/yt-dlp)
+[ffmpeg-python](https://github.com/kkroening/ffmpeg-python)
+
+[FFmpeg website](https://ffmpeg.org/)
 
 [py2exe](https://github.com/py2exe/py2exe)
