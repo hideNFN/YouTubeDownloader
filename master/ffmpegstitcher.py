@@ -12,10 +12,10 @@ def ffmpegstitcher():
 
     if os.path.exists(ffmpegfolder) is False or os.path.exists(processedfolder) is False:
         print("Creating necessary folders...")
-    if os.path.exists(ffmpegfolder) is False:
-            os.mkdir(ffmpegfolder)
-    if os.path.exists(processedfolder) is False:
-            os.mkdir(processedfolder)
+        if os.path.exists(ffmpegfolder) is False:
+                os.mkdir(ffmpegfolder)
+        if os.path.exists(processedfolder) is False:
+                os.mkdir(processedfolder)
 
     if os.path.exists(ffmpegcheck) is True and os.path.exists(ffprobecheck) is True:
         print("\nThe FFmpeg install has been found.")
