@@ -1,3 +1,8 @@
+# Folders that could get created after running the file one time
+.files/
+files/
+.data/
+data/
 # Folder where I usually back project files to
 .backup/
 backup/
