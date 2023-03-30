@@ -1,14 +1,14 @@
 import os
 from pytube import YouTube
 
+print("YouTube Downloader v1.0 by hideNFN\n")
+
+verificarefolder = os.getcwd() + "\\.files"
+if os.path.exists(verificarefolder) is False:
+    print("Creating necessary folder...")
+    os.mkdir(verificarefolder)
+
 def mp4dwn():
-    print("YouTube Downloader v1.0 by hideNFN\n")
-
-    verificarefolder = os.getcwd() + "\\.files"
-    if os.path.exists(verificarefolder) is False:
-        print("Creating necessary folder...")
-        os.mkdir(verificarefolder)
-
     while True:
         
         link = input("\nPaste the URL of the video you would like to download:\n")

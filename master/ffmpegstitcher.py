@@ -1,6 +1,8 @@
 import os
 import ffmpeg
 
+print("\nFFmpeg Stitcher v1.0 by hideNFN\n")
+
 currentdir = os.getcwd()
 ffmpegfolder = currentdir + "\\.ffmpeg"
 ffmpegcheck = ffmpegfolder + "\\ffmpeg.exe"
@@ -21,8 +23,6 @@ else:
 os.chdir(processedfolder)
 
 def ffmpegstitcher():
-    print("\nFFmpeg Stitcher v1.0 by hideNFN\n")
-
     while True:
         pathvideo = input("\nDrag the video file you would like to stitch:\n")
         pathvideo = pathvideo.strip('"')
