@@ -18,6 +18,8 @@ if os.path.exists(ffmpegcheck) is True:
 else:
     print('\nThe FFmpeg install hasn\'t been found, please download FFmpeg and place ffmpeg.exe in the ".ffmpeg" folder\n')
 
+os.chdir(processedfolder)
+
 def ffmpegstitcher():
     print("\nFFmpeg Stitcher v1.0 by hideNFN\n")
 
@@ -40,9 +42,9 @@ def ffmpegstitcher():
             stream_audio = ffmpeg.input(selectedaudiopath)
             audioname = selectedaudiopath.rsplit("\\")[-1]
             print("\n" + audioname + " was selected as the audio.")
-        
+
         try:
-            os.chdir(processedfolder)
+            videoname = os.path.splitext(videoname)[0]
             ffmpeg.concat(stream_video, stream_audio, v=1, a=1).output(videoname + ".mp4").run(cmd=ffmpegcheck)
             print("\nThe video was processed successfully.")
         except:
