@@ -6,7 +6,7 @@ def mp4dwn():
 
     verificarefolder = os.getcwd() + "\\.files"
     if os.path.exists(verificarefolder) is False:
-        print("Creating necessary folders...")
+        print("Creating necessary folder...")
         os.mkdir(verificarefolder)
 
     while True:
