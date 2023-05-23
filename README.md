@@ -7,7 +7,8 @@ Place the link of a video (Public or Unlisted), it can be a part of a public/unl
 
 Warning: Age-restricted videos cannot be downloaded with this.
 
-NOTE: Make sure to keep `pytube` updated at all times and be prepared to rebuild the project since YouTube purposefully blocks it sometimes.
+NOTE: Make sure to keep `pytube` updated at all times (with the "pip install --upgrade pytube" command) since YouTube purposefully blocks it occasionally.
+
 ### Build
 
 Use the `python freeze.py` command.
